@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Races</h2> -->
+    <div *ngIf="races.length > 0">
+        <h2>Races</h2>
+        <ul>
+            <li *ngFor="let race of races; index as i">{{ i }} - {{ race.name }}</li>
+        </ul>
+    </div>
+    <div [ngSwitch]="races.length">
+        <p *ngSwitchCase="0">You have a message</p>
+        <p *ngSwitchCase="1">You have a second message</p>
+        <p *ngSwitchDefault>You have not messages</p>
+    </div>
+</body>
+</html>
