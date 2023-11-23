@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RacesComponent } from './races/races.component';
 import { PoniesComponent } from './ponies/ponies.component';
+// import { SimpleTextDirective } from './simple-text.directive';
 
 
 
@@ -9,7 +10,8 @@ import { PoniesComponent } from './ponies/ponies.component';
   standalone: true,
   imports: [
     RacesComponent,
-    PoniesComponent
+    PoniesComponent,
+    // SimpleTextDirective
   ],
   // imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
