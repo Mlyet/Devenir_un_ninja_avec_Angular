@@ -10,11 +10,13 @@ import { PoniesModel } from '../Model/ponies.model';
   styleUrl: './pony.component.css'
 })
 export class PonyComponent {
-  @Input({required: true})pony!: PoniesModel
+  @Input({required: true})pony!: PoniesModel;
 
-  @Output() readonly ponySelected = new EventEmitter<PoniesModel>();
+  @Output() ponySelected = new EventEmitter<PoniesModel>();
 
-  selectPony(): void{
-    this.ponySelected.emit(this.pony)
+  selectPony(): void {
+    // console.log('this.pony');
+    this.ponySelected.emit(this.pony);
+    
   }
 }

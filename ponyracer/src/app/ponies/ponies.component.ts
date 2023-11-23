@@ -20,8 +20,7 @@ export class PoniesComponent {
   ];
 
   betOnPony(pony: PoniesModel): void {
-    console.log(pony);
+    console.log(pony.name);
     
   }
-  
 }
