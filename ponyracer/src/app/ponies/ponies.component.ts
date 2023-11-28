@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PoniesModel } from '../Model/ponies.model';
 import { PonyComponent } from '../pony/pony.component';
+import { GreetingComponent } from '../greeting/greeting.component';
 
 @Component({
   selector: 'ns-ponies',
   standalone: true,
-  imports: [CommonModule, PonyComponent],
+  imports: [CommonModule, PonyComponent, GreetingComponent],
   templateUrl: './ponies.component.html',
   styleUrl: './ponies.component.css'
 })
